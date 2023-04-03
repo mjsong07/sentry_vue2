@@ -28,18 +28,17 @@ export default {
     aaa(){
       console.log("aaaa")
       zzz() //调用一个不存在的方法
-      console.log(this.$refs.aa1) 
     },
     bbb(){  
      console.log("bbbb")
-     console.tError("333333333333333333");  //console_error
+     console.tError("bbbbbbbb");  //console_error
     },
     ccc(){ 
       console.log("ccc")
-      Sentry.captureException('error test ccc')
+      Sentry.captureException('ccccccc')
     }, 
     async ddd(){ 
-      throw new Error("promise error ddddd");   //promise_error 
+      throw new Error("ddddddd");   //new Error 
     },
   } 
 }
